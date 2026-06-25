@@ -31,7 +31,7 @@ let score = 0;
 let currentWord = "";
 let selectedLetters = [];
 
-let timeLeft = 15;
+let timeLeft = 20;
 let timerInterval;
 
 // ดึง DOM Elements
@@ -61,12 +61,12 @@ return Array.from(word);
 
 function startTimer() {
 clearInterval(timerInterval);
-timeLeft = 15;
+timeLeft = 20;
 timerBar.style.width = "100%";
 
 timerInterval = setInterval(() => {
 timeLeft--;
-timerBar.style.width = `${(timeLeft / 15) * 100}%`;
+timerBar.style.width = `${(timeLeft / 20) * 100}%`;
 
 if (timeLeft <= 0) {
 clearInterval(timerInterval);
